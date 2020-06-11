@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkApplicationWindow" id="window_main">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">welcom to tic tac toc</property>
+    <property name="resizable">False</property>
+    <property name="default_width">1200</property>
+    <property name="default_height">675</property>
+    <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkOverlay">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkImage">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">../Data/page1.png</property>
+          </object>
+          <packing>
+            <property name="index">-1</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="inscrire">
+            <property name="label" translatable="yes">S'INSCRIRE</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="margin_left">569</property>
+            <property name="margin_right">444</property>
+            <property name="margin_top">296</property>
+            <property name="margin_bottom">295</property>
+          </object>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="connecter">
+            <property name="label" translatable="yes">SE CONNECTER</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="margin_left">902</property>
+            <property name="margin_right">70</property>
+            <property name="margin_top">296</property>
+            <property name="margin_bottom">297</property>
+          </object>
+          <packing>
+            <property name="index">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
